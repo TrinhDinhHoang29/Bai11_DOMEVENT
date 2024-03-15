@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal--parent{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ebe8e8;
+            opacity: 0.5;
+            display: none;
+        }
+        .modal--child{
+            width: 50%;
+            position: absolute;
+            height: 50%;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <button class="openModal">
+        Mở modal
+    </button>
+    <div class="modal--parent">
+        <div class="modal--child">
+            <h1>Tiêu đề modal</h1>
+            <p>Nội dung của modal</p>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="bai4.js"></script>
